@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a4sheetCost = sc.nextInt();
+        int penCost = sc.nextInt();
+        int pencilCost = sc.nextInt();
+        int eraserCost = sc.nextInt();
+        System.out.println("Items Details");
+        System.out.println("A4sheet:" + a4sheetCost);
+        System.out.println("Pen:" + penCost);
+        System.out.println("Pencil:" + pencilCost);
+        System.out.println("Eraser:" + eraserCost);
+    }}
