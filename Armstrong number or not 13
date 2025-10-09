@@ -8,16 +8,12 @@ public class Main{
              if (n < 100 || n > 999) {
             System.out.println("No");
         } else {
-            int original = n;
-            int sum = 0;
+            int a1 = num/100;
+            int a2 = (num /10) %10;
+           int a3 = num % 10
+int sum = (a1*a1*a1) + (a2*a2*a2) +((a3*a3*a3);
 
-            while (n > 0) {
-                int digit = n % 10;
-                sum += (digit * digit * digit);
-                n /= 10;
-            }
-
-            if (sum == original)
+            if (sum == num)
                 System.out.println("Yes");
             else
                 System.out.println("No");
