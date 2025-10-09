@@ -1,20 +1,22 @@
-import java.io.*;
 import java.util.*;
 public class Main {
-public static double calculateGrossSalary(double basicSalary) {
-        double HRA, DA;
-if (basicSalary < 15000) {
-            HRA = 0.15 * basicSalary;
-            DA = 0.90 * basicSalary;
+      public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        System.out.println("Enter Danny's basic salary:");
+        double HRA;
+        double DA;
+
+        if (a < 15000) {
+            HRA = 0.15 * a;
+            DA = 0.90 * a;
         } else {
             HRA = 5000;
-            DA = 0.98 * basicSalary;
+            DA = 0.98 * a;
         }
- return basicSalary + HRA + DA;
-    }public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-double basicSalary = sc.nextDouble();
-double grossSalary = calculateGrossSalary(basicSalary);
-System.out.printf("%.2f%n", grossSalary);
-}
+
+        double b = a + hra + da;
+      DecimalFormat df = new DecimalFormat("#.00");
+        System.out.println("b: " + df.format(b));
+    }
 }
