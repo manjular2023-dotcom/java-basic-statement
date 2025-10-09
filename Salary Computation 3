@@ -15,7 +15,7 @@ public class Main {
             DA = 0.98 * a;
         }
 
-        double b = a + hra + da;
+        double b = a + HRA + DA;
       DecimalFormat df = new DecimalFormat("#.00");
         System.out.println("b: " + df.format(b));
     }
