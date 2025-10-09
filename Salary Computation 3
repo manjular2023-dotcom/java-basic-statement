@@ -1,9 +1,11 @@
 import java.util.*;
+import java.text.DecimalFormat;
 public class Main {
       public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+System.out.println("Enter Danny's basic salary:");
         int a = scanner.nextInt();
-        System.out.println("Enter Danny's basic salary:");
+        
         double HRA;
         double DA;
 
