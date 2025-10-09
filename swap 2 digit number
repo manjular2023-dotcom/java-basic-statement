@@ -12,17 +12,17 @@ public class Main {
         } 
         else {
            
-            int firstTwoDigits = n;
-            while (firstTwoDigits >= 100) {
-                firstTwoDigits /= 10;
+          
+            while (n>= 100) {
+                n /= 10;
             }
 
-            int first = firstTwoDigits / 10;
-            int second = firstTwoDigits % 10;
+            int d1= n / 10;
+            int d2 = n % 10;
 
           
-            int swapped = (second * 10) + first;
-            System.out.println(swapped);
+            int swap = (d2 * 10) + d1;
+            System.out.println(swap);
         }
     }
 }
